@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Points de vue</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/scriptParking.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body  onload='init(),initParking()'>
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Points de vue et tables d’orientation</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div id="mymap"></div>
+
+    <button type="button" class="button btn btn-primary">Primary</button>
+    <button type="button" class="button btn btn-primary">Primary</button></br>
+    <button type="button" class="button btn btn-primary">Primary</button></br>
+    <button type="button" class="button btn btn-primary">Primary</button></br>
+
+
+    <?php 
+    while ($row = $results2->fetchArray()) { 
+        ?>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="<?php echo $row['photo']; ?>" class="card-img" alt="<?php echo $row['alt']; ?>">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $row['titre']; ?></h5>
+            <p class="card-text"><?php echo $row['description']; ?></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php } ?>
+
+  </main>
+
+  <footer>
+
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script>
+    var map = L.map('mymap').setView([45.589175, 5.911509], 12);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+  </script>
+</body>
+
+</html>
