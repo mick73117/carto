@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "geoportal-extensions-leaflet",
+      "/home/grand"
+    ]
+  ],
+  "_from": "geoportal-extensions-leaflet@latest",
+  "_hasShrinkwrap": false,
+  "_id": "geoportal-extensions-leaflet@2.0.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/geoportal-extensions-leaflet",
+  "_nodeVersion": "8.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/geoportal-extensions-leaflet_2.0.3_1550514690973_0.2732388924264"
+  },
+  "_npmUser": {
+    "email": "division.api@ign.fr",
+    "name": "ignfgeoportail"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "geoportal-extensions-leaflet",
+    "raw": "geoportal-extensions-leaflet",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/geoportal-extensions-leaflet/-/geoportal-extensions-leaflet-2.0.3.tgz",
+  "_shasum": "94c6e17094b63d49c87ab3c1244c6ddae627b2fd",
+  "_shrinkwrap": null,
+  "_spec": "geoportal-extensions-leaflet",
+  "_where": "/home/grand",
+  "author": {
+    "name": "IGNF"
+  },
+  "bugs": {
+    "url": "https://github.com/IGNF/geoportal-extensions/issues"
+  },
+  "dependencies": {
+    "request": "^2.83.0",
+    "xmldom": "^0.1.27"
+  },
+  "description": "French Geoportal Extension for Leaflet",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 9,
+    "integrity": "sha512-aicxjxJJz/7oeoiXYMLw3/3fwSYqzZFzJ/+1fh8m81D6rhim895fDbOB9fZA4V5ee0Ejc8DMvqLN7kFXQYeFaQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcavoECRA9TVsSAnZWagAALQkQAIwhuHYyQbt6fo8dSeZI\nw2f/d6ouBoVwwSwQ9PFRjoLr3NIIwRV/0lz5UcTkdwIafwMIw116Fh+QLaT2\nBEkqtjBEfkQQf53f8gkQW48tBYSg706AZRoypBYg4GQv35wBWd8IHJsB3Yuk\n6f82PcDm2kzE1MdqbTdhNBMoV1T7DhkmGEho16ya+6Ic4SkU1eCZOnnWpVnA\n12eYDCrr1f9xjR1I1FrNo9snt8/Xv/exEjTt0lytr9Ac5f+dXlPH7hFP1iMc\n8MI5SbEE8aQbkjYi2odqvnk3voM35awvPasJIHIhN+M3x570zeLS4QIOEOiT\ng6eB4snQr/RNlLanuzFJHGOpeGVHxazWiFrwc8mrdMyvdlrSlGST2sEJkCHb\nwzCsHaYcj9OEWfJiVMkLHlMfcrhQV3MPrSAQk+M6yVYN6CABQ0fllFRcgfH3\nWFuhZeImxfxZUA6OgBeSziZsYo5p/3SFfLRHpbSo0B5xsoSwzaj9Us8kc7fz\nbby4r6QY54glqJFnkTGq9uceP561XhuTiyYW0wc0gk1cjgWaQWjwsTnHxG4r\nSwlBL7AXxlVd6n9FHv71NQGiE5vU1pGK+k9xE415zcXItpjpIP8psPeUaFI+\nZn0KVDeGpjRw/xDuZCIWrBwI2kQtTlhIkDYcuBYTfyNRIS+efFe+eFON0Odq\njRrD\r\n=+SV7\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "94c6e17094b63d49c87ab3c1244c6ddae627b2fd",
+    "tarball": "https://registry.npmjs.org/geoportal-extensions-leaflet/-/geoportal-extensions-leaflet-2.0.3.tgz",
+    "unpackedSize": 8301104
+  },
+  "homepage": "https://geoservices.ign.fr/documentation/utilisation_web/extension-leaflet.html",
+  "keywords": [
+    "geoportail",
+    "javascript",
+    "leaflet",
+    "plugin",
+    "publish"
+  ],
+  "license": "CECILL-B",
+  "main": "dist/GpPluginLeaflet.js",
+  "maintainers": [
+    {
+      "name": "ignfgeoportail",
+      "email": "division.api@ign.fr"
+    }
+  ],
+  "name": "geoportal-extensions-leaflet",
+  "optionalDependencies": {},
+  "peerDepencies": {
+    "leaflet": "1.3.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGNF/geoportal-extensions.git"
+  },
+  "scripts": {},
+  "version": "2.0.3"
+}
