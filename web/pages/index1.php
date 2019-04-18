@@ -1,8 +1,9 @@
 <?php
-        // $db = new SQLite3('../../data/bddBot.db');
+        $db = new SQLite3('../../data/bddBot.db');
   
-        // $results = $db->query('SELECT * FROM vue INNER JOIN plus ON plus.ID_vue = vue.ID');
-       
+        $results = $db->query('SELECT * FROM vue INNER JOIN plus ON plus.ID_vue = vue.ID WHERE ');
+        error_reporting(E_ALL);
+        ini_set("display_errors", 1);
 ?>
 
 
@@ -151,6 +152,12 @@
 
 
   <script type="text/javascript" src="../js/scriptInit.js"></script>
+  <script type="text/javascript" src="../js/scriptParking.js"></script>
+  <script type="text/javascript" src="../js/scriptBike.js"></script>
+  <script type="text/javascript" src="../js/scriptBus.js"></script>
+  <script type="text/javascript" src="../js/scriptVue.js"></script>
+  <script type="text/javascript" src="../js/scriptGeo.js"></script>
+  <script type="text/javascript" src="../js/scriptItinerary.js"></script>
 </body>
 
 </html>

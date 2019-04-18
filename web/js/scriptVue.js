@@ -18,18 +18,15 @@ let href = ["https://www.pays-lac-aiguebelette.com/activite-de-pleine-nature/bel
 
   //ajou marker avec boucle des vues de aiguebelette
 function affiche() {
-  for (var i = 0; i < coordinate.length; i++) {
-    for (var i = 0; i < title.length; i++) {
-      for (var i = 0; i < src.length; i++) {
-        for (var i = 0; i < desc.length; i++) {
-          for (var i = 0; i < href.length; i++) {
+  let count = 0;
+          
+  for (var i = 0; i < href.length; i++) {
     var marker = L.marker(coordinate[i], {icon: iconVue}).addTo(map);
     marker.bindPopup(title[i]+'<img src='+src[i]+' height="100px"/></br>' + desc[i]+ '<a href='+href[i]+'title="Google">En savoir plus</a>');
-          }
-        }
-      }
-    }
+    count++;
+    
   }
+  console.log("count:" +count);
 }
 
 
@@ -69,16 +66,9 @@ function affiche() {
 
       //ajou marker avec boucle des vues de Chambery
 function afficheChambery() {
-  for (var i = 0; i < coordinateChambery.length; i++) {
-    for (var i = 0; i < titleChambery.length; i++) {
-      for (var i = 0; i < srcChambery.length; i++) {
-        for (var i = 0; i < descChambery.length; i++) {
           for (var i = 0; i < hrefChambery.length; i++) {
     var marker = L.marker(coordinateChambery[i], {icon: iconVue}).addTo(map);
     marker.bindPopup(titleChambery[i]+'</br>'+'<img src='+srcChambery[i]+' height="100px"/></br>' + descChambery[i]+ '<a href='+hrefChambery[i]+'title="Google">En savoir plus</a>');
           }
         }
-      }
-    }
-  }
-}
+     
