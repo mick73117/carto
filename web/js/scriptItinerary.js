@@ -1,6 +1,4 @@
-var map,
-routeLayer,
-dir;
+let routeLayer, dir;
 
 function itinerary() {
 dir = MQ.routing.directions();

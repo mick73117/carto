@@ -10,16 +10,17 @@ let iconBus = new L.Icon({
 
 let adressBus = ('https://donnees.grandchambery.fr/api/records/1.0/search/?dataset=t_troncon_shape&rows=300&facet=code_ligne&facet=commune&facet=nom');
 function bus(){
+  let markerClusters = L.markerClusterGroup();
    fetch(adressBus)
        .then(function(response){
            return response.json()
        }).then (resp => {
         for (let i = 0; i < resp.records.length; i++) {
-          L.marker(resp.records[i].fields.geo_point_2d, {icon: iconBus})
+          let marker = L.marker(resp.records[i].fields.geo_point_2d, {icon: iconBus})
             .bindPopup(resp.records[i].fields.nom_park)
-            .addTo(map);
-        }
-                   
+            markerClusters.addLayer( marker );
+          }
+        map.addLayer( markerClusters );          
        })
       }
     ;
@@ -49,3 +50,4 @@ function bus(){
     //     ;
     //    tronconBus();
 
+  

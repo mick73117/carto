@@ -1,4 +1,4 @@
-//icon
+// icons
 let iconGeo = new L.Icon({
     iconUrl: ' ../../src/icons/Templatic-map-icons/professional.png',
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -7,7 +7,7 @@ let iconGeo = new L.Icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
   });
-// //Géolocalisation
+// Geolocation
 function currentLocation() {
     let p = document.getElementById("geolocalisation");
     p.onclick = currentLocation;

@@ -21,29 +21,3 @@ function bike(){
    
 
 
-//    var latlngs = respBike.records[i].fields.geo_point_2d
-// var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
-// // zoom the map to the polyline
-// map.fitBounds(polyline.getBounds());
-
-
-
-
-// .then(function(response){
-//     return response.json()
-// }).then (resp => {
-//  for (let i = 0; i < resp.records.length; i++) {
-//       var coordinates = response.records.fields.geo_shape.coodinates;
-//       var coordinates_revers = coordinates.map(function(cord) {
-//         return cord.reverse();
-//       })
-
-//       console.log (coordinates_revers)
-//       L.polyline (coordinates_revers)
-//       .addTo(map);
-//  }
- 
-            
-// })
-// }
-// ;

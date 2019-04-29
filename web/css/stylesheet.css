@@ -61,3 +61,7 @@ p {
 .logoSavoie {
     width: 300px;
 }
+
+.card {
+    box-shadow: 0 0 10px #999;
+}
