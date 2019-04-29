@@ -1,5 +1,5 @@
 //map
-  let map = L.map('mymap').setView([45.589175, 5.911509], 6);
+  let map = L.map('mymap').setView([45.589175, 5.911509], 8);
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
